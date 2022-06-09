@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import styles from "./counter.module.css";
 
-const Counter = ({count}) => {
+const Counter = ({counter}) => {
   // sample value to be replaced
-   const [number,setNumber] = useState(count)
+   const [number,setNumber] = useState(counter)
   // NOTE: do not delete `data-testid` key value pair
   const handleChange = (value) => {
          setNumber(number+value)
